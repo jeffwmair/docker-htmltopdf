@@ -1,0 +1,7 @@
+FROM ubuntu:16.04
+
+RUN apt-get update -y
+RUN apt-get install -y wkhtmltopdf xvfb apache2
+
+ENTRYPOINT ["bash"]
+# CMD ["xvfb-run", "wkhtmltopdf", "resume.html", "resume1.pdf"]
